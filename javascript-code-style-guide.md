@@ -2,11 +2,11 @@
 
 ## 规则
 
- - 应使用 **4个空格** 缩进
+ - 应使用 **2个空格** 缩进
  
     ```js
     function hello (name) {
-        console.log('hi', name)
+      console.log('hi', name)
     }
     ```
  
@@ -29,7 +29,7 @@
  
     ```js
     if (condition) { ... }   // ✓ ok
-	if(condition) { ... }    // ✗ avoid
+    if(condition) { ... }    // ✗ avoid
     ```
     
  - 应在 **函数声明的括号前** 加上空格
@@ -81,17 +81,17 @@
     ```js
     // ✓ ok
     if (condition) {
-        // ...
+      // ...
     } else {
-        // ...
+      // ...
     }
 
     // ✗ avoid
     if (condition) {
-        // ...
+      // ...
     }
     else {
-        // ...
+      // ...
     }
     ```
     
@@ -103,12 +103,12 @@
 
     // ✓ ok
     if (options.quiet !== true) {
-        console.log('done')
+      console.log('done')
     }
 
     // ✗ avoid
     if (options.quiet !== true)
-        console.log('done')
+      console.log('done')
     ```
 
  - 一定要 **处理函数的 `err` 参数** 
@@ -116,13 +116,13 @@
     ```js
     // ✓ ok
     run(function (err) {
-        if (err) throw err
-        window.alert('done')
+      if (err) throw err
+      window.alert('done')
     })
 
     // ✗ avoid
     run(function (err) {
-        window.alert('done')
+      window.alert('done')
     })
     ```
     
@@ -154,13 +154,13 @@
 
     // ✓ ok
     var location = env.development
-        ? 'localhost'
-        : 'www.api.com'
+      ? 'localhost'
+      : 'www.api.com'
 
     // ✗ avoid
     var location = env.development ?
-        'localhost' :
-        'www.api.com'
+      'localhost' :
+      'www.api.com'
     ```
  
  - 对于变量声明，**给每个声明单独写一行表达式**
@@ -175,7 +175,7 @@
     
     // ✗ avoid
     var silent = true,
-        verbose = true
+      verbose = true
     ```
     
  - 条件循环语句如果有赋值，应使用括号括起来
@@ -183,12 +183,12 @@
     ```js
     // ✓ ok
     while ((m = text.match(expr))) {
-        // ...
+      // ...
     }
 
     // ✗ avoid
     while (m = text.match(expr)) {
-        // ...
+      // ...
     }
     ```
 
@@ -206,12 +206,12 @@
     ```js
     // ✓ ok
     ;(function () {
-        window.alert('ok')
+      window.alert('ok')
     }())
 
     // ✗ avoid
     (function () {
-        window.alert('ok')
+      window.alert('ok')
     }())
     ```
 
