@@ -2,11 +2,11 @@
 
 ## 规则
 
- - 应使用 **2个空格** 缩进
+ - 应使用 **4个空格** 缩进
  
     ```js
     function hello (name) {
-      console.log('hi', name)
+        console.log('hi', name)
     }
     ```
  
